@@ -1,0 +1,16 @@
+<div>
+  <h1>Restaurant dashboard</h1>
+  <h3>View your menu items and add new menu items</h3>
+  <div class="float-right">
+    <ul class="list-group list-group-horizontal">
+      {{#if restaurant}}
+      <li class="list-group-item"><a href="/restaurant/logout" class="btn btn-danger">Logout</a></li>
+      {{else}}
+        
+      {{/if}}
+    </ul>
+  </div>
+
+  {{> _button}}
+
+</div>

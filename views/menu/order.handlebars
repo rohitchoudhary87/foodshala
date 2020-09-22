@@ -1,0 +1,36 @@
+<div class="container padding form-container">
+<div class="row">
+  <div class="col md-6 mx-auto">
+    <div class="card card-body">
+      <h3 class="text-center">Please fill details for your order</h3>
+      <p class="lead text-center">We will deliver at your doorstep</p>
+      <hr class="form-hr">
+      <form action="/menu/orders" method="post">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control" name="name"  required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Contact Number</label>
+          <input type="number" class="form-control" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="qty">Order Quantity</label>
+          <input type="number" class="form-control" name="qty" required>
+        </div>
+
+       
+        <div class="form-group">
+          <label for="textarea">For extra paper napkins or any other requirements. write here</label>
+          <textarea class="form-control" id="textarea" rows="3" name="textarea"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">ORDER</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>

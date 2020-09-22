@@ -1,0 +1,22 @@
+<div class="float-right">
+  <ul class="list-group list-group-horizontal">
+    {{#if user}}
+     <li class="list-group-item"><a href="/auth/logout" class="btn btn-danger">Logout</a></li>
+    {{else}}
+      <li class="list-group-item"><a href="/menu">Food Menu</a></li>
+    {{/if}}
+  </ul>
+</div>
+
+<h3>customers dashboard </h3>
+<h5>Welcome customers. Order from your favorite restaurants.</h5>
+
+<div class="jumbotron">
+  {{#if user}}
+  <h1 class="display-4">Hello </h1>
+  <p class="lead">Order From FoodShala and enjoy free delivery at your door step</p>
+  <hr class="my-4">
+  <a class="btn btn-primary btn-lg" href="/menu/index" role="button">ORDER NOW</a>
+  {{else}}
+  {{/if}}
+</div>

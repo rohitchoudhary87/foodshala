@@ -1,0 +1,26 @@
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+    <div class="col-12">
+      <h1 class="display-4"> Orders Recieved</h1>
+      <hr>
+    </div>
+  </div>
+</div>
+
+{{#each orders}}
+<div class="container-fluid padding">
+  <div class="row padding">
+    <div class="col-xs-12 col-sm-6 col-md-4  ">
+      <div class="card card-body mb-2 ">
+        <h3>Name: {{name}}</h3>
+        <p>Phone: {{phone}}</p>
+        <p>Quantity: {{qty}}</p>
+        <p>Details: {{textarea}}</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+{{else}}
+<p>No Orders yet. </p>
+{{/each}}

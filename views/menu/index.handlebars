@@ -1,0 +1,15 @@
+{{#each menus}}
+  <div class="card">
+  <div class="card-header">
+    From Restaurant : {{name}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Item Name: {{menu}}</h5>
+    <h5 class="card-title">Item Amount Rupees: {{price}}</h5>
+    <p class="card-text">Description: {{description}}</p>
+    <a href="/menu/order" class="btn btn-primary">Order</a>
+  </div>
+</div>
+{{else}}
+  <p>No Menu item found.</p>
+{{/each}}
